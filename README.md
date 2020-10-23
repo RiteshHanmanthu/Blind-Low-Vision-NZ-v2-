@@ -2,10 +2,9 @@
 
  ATTENTION - NEW REPOSITORY - Due to unexpected error at file save location.
 
-#  Blind & Low Vision NZ
+# Preamble 
 This project is made by a student of Avondale College, Auckland, New Zealand overseen by professional and qualified educators.
 
-# Preamble 
 This is a project consisting of 3 internals given from the New Zealand Qualification Authority (NZQA).
 * Standard: 91903 - 3.4 | 91907 - 3.8 - Develop the Blind & Low Vision NZ Landing Page.
 * Standard: 91902 - 3.3 - Design a registration page for your Blind & Low Vision NZ fundraising challenge that includes a connected database.
