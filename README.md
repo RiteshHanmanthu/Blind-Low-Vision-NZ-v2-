@@ -1,6 +1,6 @@
 # Blind-Low-Vision-NZ-v2-
 
-# ATTENTION - NEW REPOSITORY - Due to unexpected error at file save location.
+ ATTENTION - NEW REPOSITORY - Due to unexpected error at file save location.
 
 #  Blind & Low Vision NZ
 This project is made by a student of Avondale College, Auckland, New Zealand overseen by professional and qualified educators.
