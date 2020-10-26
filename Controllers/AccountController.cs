@@ -9,11 +9,7 @@ namespace LowVision.Controllers
 {
     public class AccountController: Controller  
     {
-
-
-
-        [HttpGet]
-        [AllowAnonymous]
+                       
         public IActionResult AccessDenied()
         {
 

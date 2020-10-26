@@ -1,91 +1,457 @@
 ﻿@{
     ViewBag.Title = "Donation";
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Checkout example · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+    <link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#563d7c">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
-
-
-
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="Donation">
-    <h1 class="w3-center">Make an online donation to Blind Low Vision NZ</h1>
-    <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-    <div style="margin-top:48px">
-        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-        <br>
-        <div action="/action_page.php" target="_blank">
-            <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Donation" required name="Donation"></p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Please use it" required name="options"></p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Phone Number" required name="Phone Number"></p>
-            <div>
-                <h4>Billing address</h4>
-                <p><input class="w3-input w3-border" type="text" placeholder="Address" required name="Address"></p>
-                <p><input class="w3-input w3-border" type="text" placeholder="Suburb" required name="Suburb"></p>
-                <p><input class="w3-input w3-border" type="text" placeholder="City" required name="City"></p>
-                <p><input class="w3-input w3-border" type="text" placeholder="Post code" required name="Post code"></p>
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="~/images/3 puppies photoshopped jackets.jpg" width="600">
+            <p> Our goal is to help these puppies help the people who struggle to live lives as normal people. Our goal is to donate $10,000 New Zealand Dollars by the end of 2020. Help us on our journey.</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
             </div>
-            <div class="creditCardForm">
-                <div class="heading">
-                    <h1>Confirm Purchase</h1>
-                </div>
-                <div class="payment">
-                    <div class="form-group owner">
-                        <label for="owner">Owner</label>
-                        <input type="text" class="form-control" id="owner">
-                    </div>
-                    <div class="form-group CVV">
-                        <label for="cvv">CVV</label>
-                        <input type="text" class="form-control" id="cvv">
-                    </div>
-                    <div class="form-group" id="card-number-field">
-                        <label for="cardNumber">Card Number</label>
-                        <input type="text" class="form-control" id="cardNumber">
-                    </div>
-                    <div class="form-group" id="expiration-date">
-                        <label>Expiration Date</label>
-                        <select>
-                            <option value="01">January</option>
-                            <option value="02">February </option>
-                            <option value="03">March</option>
-                            <option value="04">April</option>
-                            <option value="05">May</option>
-                            <option value="06">June</option>
-                            <option value="07">July</option>
-                            <option value="08">August</option>
-                            <option value="09">September</option>
-                            <option value="10">October</option>
-                            <option value="11">November</option>
-                            <option value="12">December</option>
-                        </select>
-                        <select>
-                            <option value="16"> 2020</option>
-                            <option value="17"> 2021</option>
-                            <option value="18"> 2022</option>
-                            <option value="19"> 2023</option>
-                            <option value="20"> 2024</option>
-                            <option value="21"> 2025</option>
-                        </select>
-                    </div>
-                    <div class="form-group" id="credit_cards">
-                        <img src="~/images/Visa image.png" class="img-fluid" style="width:158.725px; height:53.455px;" id="visa">
-                        <img src="~/images/MasterCard.jpg" class="img-fluid" style="width:158.725px; height:53.455px;" id="mastercard">
-                        <img src="~/images/american_express logo.jpg" class="img-fluid" style="width:158.725px; height:106.91px;" id="amex">
-                    </div>
-                    <div class="form-group" id="pay-now">
-                        <button type="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>
-                    </div>
-
-                </div>
-            </div>
-
+            <h2>Fill in Details to donate below</h2>
+                <p class="lead">All credentials will be confidential and will never be used by third-party personell.</p>
         </div>
-    </div>
-    <p>
-        <button class="w3-button w3-black" type="submit">
-            <i class="fa fa-paper-plane"></i> Donate
-        </button>
 
+        <div class="row">
+            <div class="col-md-4 order-md-2 mb-4">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-muted">Donation Amount</span>
+                    <span class="badge badge-secondary badge-pill">3</span>
+                </h4>
+                
 
-    </p>
+                <form class="card p-2">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter Donation Amount">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-secondary">Redeem</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-8 order-md-1">
+                
+                <form class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">First name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">Last name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+                    </div>
 
-</div>
+                    <div class="mb-3">
+                        <label for="username">Username</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"></span>
+                            </div>
+                            <input type="text" class="form-control" id="username" placeholder="Username" required>
+                            <div class="invalid-feedback" style="width: 100%;">
+                                Your username is required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        <div class="invalid-feedback">
+                            Please enter a valid email address for shipping updates.
+                        </div>
+                    </div>
+                                        
+                    <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <label for="country">Country (Not compulsory - only for statistics)</label>
+                            <select class="custom-select d-block w-100" id="country">
+                                <option>New Zealand</option>
+                                <option>Afghanistan</option>
+                                <option>Albania</option>
+                                <option>Algeria</option>
+                                <option>Andorra</option>
+                                <option>Angola</option>
+                                <option>Antigua and Barbuda</option>
+                                <option>Argentina</option>
+                                <option>Armenia</option>
+                                <option>Australia</option>
+                                <option>Austria</option>
+                                <option>Austrian Empire</option>
+                                <option>Azerbaijan</option>
+                                <option>Baden</option>
+                                <option>Bahamas</option>
+                                <option>Bahrain</option>
+                                <option>Bangladesh</option>
+                                <option>Barbados</option>
+                                <option>Bavaria*</option>
+                                <option>Belarus</option>
+                                <option>Belgium</option>
+                                <option>Belize</option>
+                                <option>Benin (Dahomey)</option>
+                                <option>Bolivia</option>
+                                <option>Bosnia and Herzegovina</option>
+                                <option>Botswana</option>
+                                <option>Brazil</option>
+                                <option>Brunei</option>
+                                <option>Brunswick and Lüneburg</option>
+                                <option>Bulgaria</option>
+                                <option>Burkina Faso (Upper Volta)</option>
+                                <option>Burma</option>
+                                <option>Burundi</option>
+                                <option>Cabo Verde</option>
+                                <option>Cambodia</option>
+                                <option>Cameroon</option>
+                                <option>Canada</option>
+                                <option>Cayman Islands</option>
+                                <option>Central African Republic</option>
+                                <option>Central American Federation*</option>
+                                <option>Chad</option>
+                                <option>Chile</option>
+                                <option>China</option>
+                                <option>Colombia</option>
+                                <option>Comoros</option>
+                                <option>Congo Free State</option>
+                                <option>Costa Rica</option>
+                                <option>Cote d’Ivoire (Ivory Coast)</option>
+                                <option>Croatia</option>
+                                <option>Cuba</option>
+                                <option>Cyprus</option>
+                                <option>Czechia</option>
+                                <option>Czechoslovakia</option>
+                                <option>Democratic Republic of the Congo</option>
+                                <option>Denmark</option>
+                                <option>Djibouti</option>
+                                <option>Dominica</option>
+                                <option>Dominican Republic</option>
+                                <option>PparmaDuchy of Parma</option>
+                                <option>East Germany (German Democratic Republic)</option>
+                                <option>Ecuador</option>
+                                <option>Egypt</option>
+                                <option>El Salvador</option>
+                                <option>Equatorial Guinea</option>
+                                <option>Eritrea</option>
+                                <option>Estonia</option>
+                                <option>Eswatini</option>
+                                <option>Ethiopia</option>
+                                <option>Federal Government of Germany</option>
+                                <option>Fiji</option>
+                                <option>Finland</option>
+                                <option>France</option>
+                                <option>Gabon</option>
+                                <option>Gambia, The</option>
+                                <option>Georgia</option>
+                                <option>Germany</option>
+                                <option>Ghana</option>
+                                <option>Grand Duchy of Tuscany</option>
+                                <option>Greece</option>
+                                <option>Grenada</option>
+                                <option>Guatemala</option>
+                                <option>Guinea</option>
+                                <option>Guinea-Bissau</option>
+                                <option>Guyana</option>
+                                <option>Haiti</option>
+                                <option>Hanover*</option>
+                                <option>Hanseatic Republics</option>
+                                <option>Hawaii</option>
+                                <option>Hesse</option>
+                                <option>Holy See</option>
+                                <option>Honduras</option>
+                                <option>Hungary</option>
+                                <option>Iceland</option>
+                                <option>India</option>
+                                <option>Indonesia</option>
+                                <option>Iran</option>
+                                <option>Iraq</option>
+                                <option>Ireland</option>
+                                <option>Israel</option>
+                                <option>Italy</option>
+                                <option>Jamaica</option>
+                                <option>Japan</option>
+                                <option>Jordan</option>
+                                <option>Kazakhstan</option>
+                                <option>Kenya</option>
+                                <option>Kingdom of Serbia/Yugoslavia</option>
+                                <option>Kiribati</option>
+                                <option>Korea</option>
+                                <option>Kosovo</option>
+                                <option>Kuwait</option>
+                                <option>Kyrgyzstan</option>
+                                <option>Laos</option>
+                                <option>Latvia</option>
+                                <option>Lebanon</option>
+                                <option>Lesotho</option>
+                                <option>Lew Chew (Loochoo)*</option>
+                                <option>Liberia</option>
+                                <option>Libya</option>
+                                <option>Liechtenstein</option>
+                                <option>Lithuania</option>
+                                <option>Luxembourg</option>
+                                <option>Madagascar</option>
+                                <option>Malawi</option>
+                                <option>Malaysia</option>
+                                <option>Maldives</option>
+                                <option>Mali</option>
+                                <option>Malta</option>
+                                <option>Marshall Islands</option>
+                                <option>Mauritania</option>
+                                <option>Mauritius</option>
+                                <option>Mecklenburg-Schwerin</option>
+                                <option>Mecklenburg-Strelitz*</option>
+                                <option>Mexico</option>
+                                <option>Micronesia</option>
+                                <option>moldovaMoldova</option>
+                                <option>Monaco</option>
+                                <option>Mongolia</option>
+                                <option>Montenegro</option>
+                                <option>Morocco</option>
+                                <option>Mozambique</option>
+                                <option>Namibia</option>
+                                <option>Nassau*</option>
+                                <option>Nauru</option>
+                                <option>Nepal</option>
+                                <option>Netherlands</option>
+                                <option>Nicaragua</option>
+                                <option>Niger</option>
+                                <option>Nigeria</option>
+                                <option>North German Confederation</option>
+                                <option>North German Union*</option>
+                                <option>North Macedonia</option>
+                                <option>Norway</option>
+                                <option>Oldenburg*</option>
+                                <option>Oman</option>
+                                <option>Orange Free State*</option>
+                                <option>Pakistan</option>
+                                <option>Palau</option>
+                                <option>Panama</option>
+                                <option>Papal States*</option>
+                                <option>Papua New Guinea</option>
+                                <option>Paraguay</option>
+                                <option>Peru</option>
+                                <option>Philippines</option>
+                                <option>Piedmont-Sardinia</option>
+                                <option>Poland</option>
+                                <option>Portugal</option>
+                                <option>Republic of Genoa*</option>
+                                <option>Republic of Korea (South Korea)</option>
+                                <option>Republic of the Congo</option>
+                                <option>Romania</option>
+                                <option>Russia</option>
+                                <option>Rwanda</option>
+                                <option>Saint Kitts and Nevis</option>
+                                <option>Saint Lucia</option>
+                                <option>Saint Vincent and the Grenadines</option>
+                                <option>Samoa</option>
+                                <option>San Marino</option>
+                                <option>Sao Tome and Principe</option>
+                                <option>Saudi Arabia</option>
+                                <option>Schaumburg-Lippe</option>
+                                <option>Senegal</option>
+                                <option>Serbia</option>
+                                <option>Seychelles</option>
+                                <option>Sierra Leone</option>
+                                <option>Singapore</option>
+                                <option>Slovakia</option>
+                                <option>Slovenia</option>
+                                <option>Solomon Islands</option>
+                                <option>Somalia</option>
+                                <option>South Africa</option>
+                                <option>South Sudan</option>
+                                <option>Spain</option>
+                                <option>Sri Lanka</option>
+                                <option>Sudan</option>
+                                <option>Suriname</option>
+                                <option>Sweden</option>
+                                <option>Switzerland</option>
+                                <option>Syria</option>
+                                <option>Tajikistan</option>
+                                <option>Tanzania</option>
+                                <option>Texas*</option>
+                                <option>Thailand</option>
+                                <option>Timor-Leste</option>
+                                <option>Togo</option>
+                                <option>Tonga/options></option>
+                                <option>Trinidad and Tobago</option>
+                                <option>Tunisia</option>
+                                <option>Turkey</option>
+                                <option>Turkmenistan</option>
+                                <option>Tuvalu</option>
+                                <option>Two Sicilies</option>
+                                <option>Uganda</option>
+                                <option>Ukraine</option>
+                                <option>Union of Soviet Socialist Republics</option>
+                                <option>United Arab Emirates</option>
+                                <option>United Kingdom</option>
+                                <option>Uruguay</option>
+                                <option>Uzbekistan</option>
+                                <option>Vanuatu</option>
+                                <option>Venezuela</option>
+                                <option>Vietnam</option>
+                                <option>Württemberg</option>
+                                <option>Yemen</option>
+                                <option>Zambia</option>
+                                <option>Zimbabwe</option>
+
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid country.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            
+                            
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="save-info">
+                        <label class="custom-control-label" for="save-info">Save this information for next time</label>
+                    </div>
+                    <hr class="mb-4">
+
+                    <h4 class="mb-3">Payment</h4>
+
+                    <div class="d-block my-3">
+                        <div class="custom-control custom-radio">
+                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                            <label class="custom-control-label" for="credit">Credit card</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="debit">Debit card</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="paypal">PayPal</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="cc-name">Name on card</label>
+                            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                            <small class="text-muted">Full name as displayed on card</small>
+                            <div class="invalid-feedback">
+                                Name on card is required
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="cc-number">Credit card number</label>
+                            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Credit card number is required
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <label for="cc-expiration">Expiration</label>
+                            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                            <select>
+                                <option value="01">January</option>
+                                <option value="02">February </option>
+                                <option value="03">March</option>
+                                <option value="04">April</option>
+                                <option value="05">May</option>
+                                <option value="06">June</option>
+                                <option value="07">July</option>
+                                <option value="08">August</option>
+                                <option value="09">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                            <select>
+                                <option value="16"> 2020</option>
+                                <option value="17"> 2021</option>
+                                <option value="18"> 2022</option>
+                                <option value="19"> 2023</option>
+                                <option value="20"> 2024</option>
+                                <option value="21"> 2025</option>
+                                <option value="21"> 2026</option>
+                                <option value="21"> 2027</option>
+                            </select>
+                        </div>
+                        <div class="invalid-feedback">
+                            Expiration date required
+                        </div>
+                          </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="cc-cvv">CVV</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Security code required
+                            </div>
+                        </div>
+                        
+                        <hr class="mb-4">
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">Donate</button>
+                </form>
+            </div>
+        </div>
+        </div>
+
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">Blind & Low Vision New Zealand</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacy</a></li>
+                <li class="list-inline-item"><a href="#">Support</a></li>
+            </ul>
+        </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="form-validation.js"></script>
+</body>
+</html>

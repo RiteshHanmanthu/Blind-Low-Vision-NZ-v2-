@@ -1,5 +1,5 @@
 ﻿@page
-@model RegisterModel
+@model LowVision.Areas.Identity.Pages.Account.RegisterModel 
 @{
     ViewData["Title"] = "Register";
      Layout = "/Areas/Identity/Pages/_LoginPageLayout.cshtml";
@@ -14,6 +14,7 @@
                         <label asp-for="Input.FirstName"></label>
                         <input asp-for="Input.FirstName" class="form-control" />
                         <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -45,6 +46,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Register</button>
         </form>
+
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
