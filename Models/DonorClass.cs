@@ -9,13 +9,14 @@ namespace LowVision.Models
     {
         [Required]
         public int DonorId { get; set; }
-
+        [MaxLength(70, ErrorMessage ="Full Name cannot exceed 70 characters")]
         [Display(Name = "Full name")]
         [Required(ErrorMessage ="Please enter Full name")]
         public string DonorName { get; set; }
 
         [Display(Name = "Email")]
-        [Required(ErrorMessage = "Please enter email")]
+        [Required]
+        [RegularExpression(".+\\@.+\\..+", ErrorMessage ="Please Enter valid Email")]
         public string Email { get; set; }
 
         
@@ -23,9 +24,9 @@ namespace LowVision.Models
         [Required(ErrorMessage = "Please enter Country")]
         public string Country { get; set; }
 
-        
-        [Display(Name = "Donation Amount")]
-        [Required(ErrorMessage = "Please enter Donation Amount")]
+        [Range(5,500)]
+        [Display(Name = "Donation Amount ($NZD)")]
+        [Required(ErrorMessage = "Please enter Donation Amount more than $5 NZD as a whole number")]
         public int DonationAmt { get; set; }
 
         
@@ -38,12 +39,18 @@ namespace LowVision.Models
         [Required(ErrorMessage = "Please enter card-holder number")]
         public int CCnumber { get; set; }
 
-        
-        [Display(Name = "Card expiration date")]
+        [Display(Name = "Card Expiry: Month")]
         [Required(ErrorMessage = "Please enter card expiration date")]
-        public string CCexpiration { get; set; }
+        [DataType(DataType.Date)]
+        public int CCmonth { get; set; }
 
-        
+        [Display(Name = "Year: ")]
+        [Required(ErrorMessage = "Please enter card expiration date")]
+        [DataType(DataType.Date)]
+        public int CCyear { get; set; }
+
+
+
         [Display(Name = "Card CSC")]
         [Required(ErrorMessage = "Please enter card CSC number")]
         public int CCcsc { get; set; }

@@ -6,7 +6,7 @@
 
 <h1>Donation</h1>
 
-<h4>Blind & Low Vision New Zealand Donation form</h4>
+<h4>DonorClass</h4>
 <hr />
 <div class="row">
     <div class="col-md-9">
@@ -24,278 +24,315 @@
             </div>
             <div class="form-group">
                 <label asp-for="Country" class="control-label"></label>
+
+                <select asp-for="Country">
+                    <option selected disabled> Birth Country </option>
+                    <option>New Zealand</option>
+                    <option>Afghanistan</option>
+                    <option>Albania</option>
+                    <option>Algeria</option>
+                    <option>Andorra</option>
+                    <option>Angola</option>
+                    <option>Antigua and Barbuda</option>
+                    <option>Argentina</option>
+                    <option>Armenia</option>
+                    <option>Australia</option>
+                    <option>Austria</option>
+                    <option>Austrian Empire</option>
+                    <option>Azerbaijan</option>
+                    <option>Baden</option>
+                    <option>Bahamas</option>
+                    <option>Bahrain</option>
+                    <option>Bangladesh</option>
+                    <option>Barbados</option>
+                    <option>Bavaria*</option>
+                    <option>Belarus</option>
+                    <option>Belgium</option>
+                    <option>Belize</option>
+                    <option>Benin (Dahomey)</option>
+                    <option>Bolivia</option>
+                    <option>Bosnia and Herzegovina</option>
+                    <option>Botswana</option>
+                    <option>Brazil</option>
+                    <option>Brunei</option>
+                    <option>Brunswick and Lüneburg</option>
+                    <option>Bulgaria</option>
+                    <option>Burkina Faso (Upper Volta)</option>
+                    <option>Burma</option>
+                    <option>Burundi</option>
+                    <option>Cabo Verde</option>
+                    <option>Cambodia</option>
+                    <option>Cameroon</option>
+                    <option>Canada</option>
+                    <option>Cayman Islands</option>
+                    <option>Central African Republic</option>
+                    <option>Central American Federation*</option>
+                    <option>Chad</option>
+                    <option>Chile</option>
+                    <option>China</option>
+                    <option>Colombia</option>
+                    <option>Comoros</option>
+                    <option>Congo Free State</option>
+                    <option>Costa Rica</option>
+                    <option>Cote d’Ivoire (Ivory Coast)</option>
+                    <option>Croatia</option>
+                    <option>Cuba</option>
+                    <option>Cyprus</option>
+                    <option>Czechia</option>
+                    <option>Czechoslovakia</option>
+                    <option>Democratic Republic of the Congo</option>
+                    <option>Denmark</option>
+                    <option>Djibouti</option>
+                    <option>Dominica</option>
+                    <option>Dominican Republic</option>
+                    <option>PparmaDuchy of Parma</option>
+                    <option>East Germany (German Democratic Republic)</option>
+                    <option>Ecuador</option>
+                    <option>Egypt</option>
+                    <option>El Salvador</option>
+                    <option>Equatorial Guinea</option>
+                    <option>Eritrea</option>
+                    <option>Estonia</option>
+                    <option>Eswatini</option>
+                    <option>Ethiopia</option>
+                    <option>Federal Government of Germany</option>
+                    <option>Fiji</option>
+                    <option>Finland</option>
+                    <option>France</option>
+                    <option>Gabon</option>
+                    <option>Gambia, The</option>
+                    <option>Georgia</option>
+                    <option>Germany</option>
+                    <option>Ghana</option>
+                    <option>Grand Duchy of Tuscany</option>
+                    <option>Greece</option>
+                    <option>Grenada</option>
+                    <option>Guatemala</option>
+                    <option>Guinea</option>
+                    <option>Guinea-Bissau</option>
+                    <option>Guyana</option>
+                    <option>Haiti</option>
+                    <option>Hanover*</option>
+                    <option>Hanseatic Republics</option>
+                    <option>Hawaii</option>
+                    <option>Hesse</option>
+                    <option>Holy See</option>
+                    <option>Honduras</option>
+                    <option>Hungary</option>
+                    <option>Iceland</option>
+                    <option>India</option>
+                    <option>Indonesia</option>
+                    <option>Iran</option>
+                    <option>Iraq</option>
+                    <option>Ireland</option>
+                    <option>Israel</option>
+                    <option>Italy</option>
+                    <option>Jamaica</option>
+                    <option>Japan</option>
+                    <option>Jordan</option>
+                    <option>Kazakhstan</option>
+                    <option>Kenya</option>
+                    <option>Kingdom of Serbia/Yugoslavia</option>
+                    <option>Kiribati</option>
+                    <option>Korea</option>
+                    <option>Kosovo</option>
+                    <option>Kuwait</option>
+                    <option>Kyrgyzstan</option>
+                    <option>Laos</option>
+                    <option>Latvia</option>
+                    <option>Lebanon</option>
+                    <option>Lesotho</option>
+                    <option>Lew Chew (Loochoo)*</option>
+                    <option>Liberia</option>
+                    <option>Libya</option>
+                    <option>Liechtenstein</option>
+                    <option>Lithuania</option>
+                    <option>Luxembourg</option>
+                    <option>Madagascar</option>
+                    <option>Malawi</option>
+                    <option>Malaysia</option>
+                    <option>Maldives</option>
+                    <option>Mali</option>
+                    <option>Malta</option>
+                    <option>Marshall Islands</option>
+                    <option>Mauritania</option>
+                    <option>Mauritius</option>
+                    <option>Mecklenburg-Schwerin</option>
+                    <option>Mecklenburg-Strelitz*</option>
+                    <option>Mexico</option>
+                    <option>Micronesia</option>
+                    <option>moldovaMoldova</option>
+                    <option>Monaco</option>
+                    <option>Mongolia</option>
+                    <option>Montenegro</option>
+                    <option>Morocco</option>
+                    <option>Mozambique</option>
+                    <option>Namibia</option>
+                    <option>Nassau*</option>
+                    <option>Nauru</option>
+                    <option>Nepal</option>
+                    <option>Netherlands</option>
+                    <option>Nicaragua</option>
+                    <option>Niger</option>
+                    <option>Nigeria</option>
+                    <option>North German Confederation</option>
+                    <option>North German Union*</option>
+                    <option>North Macedonia</option>
+                    <option>Norway</option>
+                    <option>Oldenburg*</option>
+                    <option>Oman</option>
+                    <option>Orange Free State*</option>
+                    <option>Pakistan</option>
+                    <option>Palau</option>
+                    <option>Panama</option>
+                    <option>Papal States*</option>
+                    <option>Papua New Guinea</option>
+                    <option>Paraguay</option>
+                    <option>Peru</option>
+                    <option>Philippines</option>
+                    <option>Piedmont-Sardinia</option>
+                    <option>Poland</option>
+                    <option>Portugal</option>
+                    <option>Republic of Genoa*</option>
+                    <option>Republic of Korea (South Korea)</option>
+                    <option>Republic of the Congo</option>
+                    <option>Romania</option>
+                    <option>Russia</option>
+                    <option>Rwanda</option>
+                    <option>Saint Kitts and Nevis</option>
+                    <option>Saint Lucia</option>
+                    <option>Saint Vincent and the Grenadines</option>
+                    <option>Samoa</option>
+                    <option>San Marino</option>
+                    <option>Sao Tome and Principe</option>
+                    <option>Saudi Arabia</option>
+                    <option>Schaumburg-Lippe</option>
+                    <option>Senegal</option>
+                    <option>Serbia</option>
+                    <option>Seychelles</option>
+                    <option>Sierra Leone</option>
+                    <option>Singapore</option>
+                    <option>Slovakia</option>
+                    <option>Slovenia</option>
+                    <option>Solomon Islands</option>
+                    <option>Somalia</option>
+                    <option>South Africa</option>
+                    <option>South Sudan</option>
+                    <option>Spain</option>
+                    <option>Sri Lanka</option>
+                    <option>Sudan</option>
+                    <option>Suriname</option>
+                    <option>Sweden</option>
+                    <option>Switzerland</option>
+                    <option>Syria</option>
+                    <option>Tajikistan</option>
+                    <option>Tanzania</option>
+                    <option>Texas*</option>
+                    <option>Thailand</option>
+                    <option>Timor-Leste</option>
+                    <option>Togo</option>
+                    <option>Tonga/options></option>
+                    <option>Trinidad and Tobago</option>
+                    <option>Tunisia</option>
+                    <option>Turkey</option>
+                    <option>Turkmenistan</option>
+                    <option>Tuvalu</option>
+                    <option>Two Sicilies</option>
+                    <option>Uganda</option>
+                    <option>Ukraine</option>
+                    <option>Union of Soviet Socialist Republics</option>
+                    <option>United Arab Emirates</option>
+                    <option>United Kingdom</option>
+                    <option>Uruguay</option>
+                    <option>Uzbekistan</option>
+                    <option>Vanuatu</option>
+                    <option>Venezuela</option>
+                    <option>Vietnam</option>
+                    <option>Württemberg</option>
+                    <option>Yemen</option>
+                    <option>Zambia</option>
+                    <option>Zimbabwe</option>
+
+                </select>
+                <div class="invalid-feedback">
+                    Please select a valid Country.
+                </div>
+
+                <span asp-validation-for="Country" class="text-danger"></span>
+
+                <div class="form-group">
+                    <label asp-for="Country" class="control-label"></label>
+                    <input asp-for="Country" class="form-control" />
+                    <span asp-validation-for="Country" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DonationAmt" class="control-label"></label>
+                    <input asp-for="DonationAmt" class="form-control" />
+                    <span asp-validation-for="DonationAmt" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CCname" class="control-label"></label>
+                    <input asp-for="CCname" class="form-control" />
+                    <span asp-validation-for="CCname" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CCnumber" class="control-label"></label>
+                    <input asp-for="CCnumber" class="form-control" />
+                    <span asp-validation-for="CCnumber" class="text-danger"></span>
+                </div>
                 
-                <select asp-for="Country">  
-                    <option selected disabled>-- Select Country--</option>
-                        <option>New Zealand</option>
-                        <option>Afghanistan</option>
-                        <option>Albania</option>
-                        <option>Algeria</option>
-                        <option>Andorra</option>
-                        <option>Angola</option>
-                        <option>Antigua and Barbuda</option>
-                        <option>Argentina</option>
-                        <option>Armenia</option>
-                        <option>Australia</option>
-                        <option>Austria</option>
-                        <option>Austrian Empire</option>
-                        <option>Azerbaijan</option>
-                        <option>Baden</option>
-                        <option>Bahamas</option>
-                        <option>Bahrain</option>
-                        <option>Bangladesh</option>
-                        <option>Barbados</option>
-                        <option>Bavaria*</option>
-                        <option>Belarus</option>
-                        <option>Belgium</option>
-                        <option>Belize</option>
-                        <option>Benin (Dahomey)</option>
-                        <option>Bolivia</option>
-                        <option>Bosnia and Herzegovina</option>
-                        <option>Botswana</option>
-                        <option>Brazil</option>
-                        <option>Brunei</option>
-                        <option>Brunswick and Lüneburg</option>
-                        <option>Bulgaria</option>
-                        <option>Burkina Faso (Upper Volta)</option>
-                        <option>Burma</option>
-                        <option>Burundi</option>
-                        <option>Cabo Verde</option>
-                        <option>Cambodia</option>
-                        <option>Cameroon</option>
-                        <option>Canada</option>
-                        <option>Cayman Islands</option>
-                        <option>Central African Republic</option>
-                        <option>Central American Federation*</option>
-                        <option>Chad</option>
-                        <option>Chile</option>
-                        <option>China</option>
-                        <option>Colombia</option>
-                        <option>Comoros</option>
-                        <option>Congo Free State</option>
-                        <option>Costa Rica</option>
-                        <option>Cote d’Ivoire (Ivory Coast)</option>
-                        <option>Croatia</option>
-                        <option>Cuba</option>
-                        <option>Cyprus</option>
-                        <option>Czechia</option>
-                        <option>Czechoslovakia</option>
-                        <option>Democratic Republic of the Congo</option>
-                        <option>Denmark</option>
-                        <option>Djibouti</option>
-                        <option>Dominica</option>
-                        <option>Dominican Republic</option>
-                        <option>PparmaDuchy of Parma</option>
-                        <option>East Germany (German Democratic Republic)</option>
-                        <option>Ecuador</option>
-                        <option>Egypt</option>
-                        <option>El Salvador</option>
-                        <option>Equatorial Guinea</option>
-                        <option>Eritrea</option>
-                        <option>Estonia</option>
-                        <option>Eswatini</option>
-                        <option>Ethiopia</option>
-                        <option>Federal Government of Germany</option>
-                        <option>Fiji</option>
-                        <option>Finland</option>
-                        <option>France</option>
-                        <option>Gabon</option>
-                        <option>Gambia, The</option>
-                        <option>Georgia</option>
-                        <option>Germany</option>
-                        <option>Ghana</option>
-                        <option>Grand Duchy of Tuscany</option>
-                        <option>Greece</option>
-                        <option>Grenada</option>
-                        <option>Guatemala</option>
-                        <option>Guinea</option>
-                        <option>Guinea-Bissau</option>
-                        <option>Guyana</option>
-                        <option>Haiti</option>
-                        <option>Hanover*</option>
-                        <option>Hanseatic Republics</option>
-                        <option>Hawaii</option>
-                        <option>Hesse</option>
-                        <option>Holy See</option>
-                        <option>Honduras</option>
-                        <option>Hungary</option>
-                        <option>Iceland</option>
-                        <option>India</option>
-                        <option>Indonesia</option>
-                        <option>Iran</option>
-                        <option>Iraq</option>
-                        <option>Ireland</option>
-                        <option>Israel</option>
-                        <option>Italy</option>
-                        <option>Jamaica</option>
-                        <option>Japan</option>
-                        <option>Jordan</option>
-                        <option>Kazakhstan</option>
-                        <option>Kenya</option>
-                        <option>Kingdom of Serbia/Yugoslavia</option>
-                        <option>Kiribati</option>
-                        <option>Korea</option>
-                        <option>Kosovo</option>
-                        <option>Kuwait</option>
-                        <option>Kyrgyzstan</option>
-                        <option>Laos</option>
-                        <option>Latvia</option>
-                        <option>Lebanon</option>
-                        <option>Lesotho</option>
-                        <option>Lew Chew (Loochoo)*</option>
-                        <option>Liberia</option>
-                        <option>Libya</option>
-                        <option>Liechtenstein</option>
-                        <option>Lithuania</option>
-                        <option>Luxembourg</option>
-                        <option>Madagascar</option>
-                        <option>Malawi</option>
-                        <option>Malaysia</option>
-                        <option>Maldives</option>
-                        <option>Mali</option>
-                        <option>Malta</option>
-                        <option>Marshall Islands</option>
-                        <option>Mauritania</option>
-                        <option>Mauritius</option>
-                        <option>Mecklenburg-Schwerin</option>
-                        <option>Mecklenburg-Strelitz*</option>
-                        <option>Mexico</option>
-                        <option>Micronesia</option>
-                        <option>moldovaMoldova</option>
-                        <option>Monaco</option>
-                        <option>Mongolia</option>
-                        <option>Montenegro</option>
-                        <option>Morocco</option>
-                        <option>Mozambique</option>
-                        <option>Namibia</option>
-                        <option>Nassau*</option>
-                        <option>Nauru</option>
-                        <option>Nepal</option>
-                        <option>Netherlands</option>
-                        <option>Nicaragua</option>
-                        <option>Niger</option>
-                        <option>Nigeria</option>
-                        <option>North German Confederation</option>
-                        <option>North German Union*</option>
-                        <option>North Macedonia</option>
-                        <option>Norway</option>
-                        <option>Oldenburg*</option>
-                        <option>Oman</option>
-                        <option>Orange Free State*</option>
-                        <option>Pakistan</option>
-                        <option>Palau</option>
-                        <option>Panama</option>
-                        <option>Papal States*</option>
-                        <option>Papua New Guinea</option>
-                        <option>Paraguay</option>
-                        <option>Peru</option>
-                        <option>Philippines</option>
-                        <option>Piedmont-Sardinia</option>
-                        <option>Poland</option>
-                        <option>Portugal</option>
-                        <option>Republic of Genoa*</option>
-                        <option>Republic of Korea (South Korea)</option>
-                        <option>Republic of the Congo</option>
-                        <option>Romania</option>
-                        <option>Russia</option>
-                        <option>Rwanda</option>
-                        <option>Saint Kitts and Nevis</option>
-                        <option>Saint Lucia</option>
-                        <option>Saint Vincent and the Grenadines</option>
-                        <option>Samoa</option>
-                        <option>San Marino</option>
-                        <option>Sao Tome and Principe</option>
-                        <option>Saudi Arabia</option>
-                        <option>Schaumburg-Lippe</option>
-                        <option>Senegal</option>
-                        <option>Serbia</option>
-                        <option>Seychelles</option>
-                        <option>Sierra Leone</option>
-                        <option>Singapore</option>
-                        <option>Slovakia</option>
-                        <option>Slovenia</option>
-                        <option>Solomon Islands</option>
-                        <option>Somalia</option>
-                        <option>South Africa</option>
-                        <option>South Sudan</option>
-                        <option>Spain</option>
-                        <option>Sri Lanka</option>
-                        <option>Sudan</option>
-                        <option>Suriname</option>
-                        <option>Sweden</option>
-                        <option>Switzerland</option>
-                        <option>Syria</option>
-                        <option>Tajikistan</option>
-                        <option>Tanzania</option>
-                        <option>Texas*</option>
-                        <option>Thailand</option>
-                        <option>Timor-Leste</option>
-                        <option>Togo</option>
-                        <option>Tonga/options></option>
-                        <option>Trinidad and Tobago</option>
-                        <option>Tunisia</option>
-                        <option>Turkey</option>
-                        <option>Turkmenistan</option>
-                        <option>Tuvalu</option>
-                        <option>Two Sicilies</option>
-                        <option>Uganda</option>
-                        <option>Ukraine</option>
-                        <option>Union of Soviet Socialist Republics</option>
-                        <option>United Arab Emirates</option>
-                        <option>United Kingdom</option>
-                        <option>Uruguay</option>
-                        <option>Uzbekistan</option>
-                        <option>Vanuatu</option>
-                        <option>Venezuela</option>
-                        <option>Vietnam</option>
-                        <option>Württemberg</option>
-                        <option>Yemen</option>
-                        <option>Zambia</option>
-                        <option>Zimbabwe</option>
-
+                
+                <div class="form-row">
+                       
+                        <span asp-validation-for="CCmonth" class="text-danger"></span>
+                    </div>               
+                <div class="form-group">
+                    <label asp-for="CCmonth" class="control-label"></label>
+                    <select asp-for="CCmonth">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
                     </select>
-                    <div class="invalid-feedback">
-                        Please select a valid Country.
-                    </div>
-            
-            <span asp-validation-for="Country" class="text-danger"></span>
 
-            <div class="form-group">
-                <label asp-for="DonationAmt" class="control-label"></label>
-                <input asp-for="DonationAmt" class="form-control" />
-                <span asp-validation-for="DonationAmt" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CCname" class="control-label"></label>
-                <input asp-for="CCname" class="form-control" />
-                <span asp-validation-for="CCname" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CCnumber" class="control-label"></label>
-                <input asp-for="CCnumber" class="form-control" />
-             </div>
-            <div class="form-group">
-                <label asp-for="CCexpiration" class="control-label"></label>
-                <input asp-for="CCexpiration" class="form-control" />
-                <span asp-validation-for="CCexpiration" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CCcsc" class="control-label"></label>
-                <input asp-for="CCcsc" class="form-control" />
-                <span asp-validation-for="CCcsc" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-             <b>@ViewData["Message"]</b>
+
+                    <span asp-validation-for="CCyear" class="text-danger"></span>
+                    <div class="form-group">
+                        <label asp-for="CCyear" class="control-label"></label>
+                        <select asp-for="CCyear">
+                            <option>2021</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                            <option>2027</option>
+                            <option>2028</option>
+                            <option>20299</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="CCcsc" class="control-label"></label>
+                        <input asp-for="CCcsc" class="form-control" />
+                        <span asp-validation-for="CCcsc" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Donate" class="btn btn-primary" />
+                    </div>
+                    <b>@ViewData["Message"]</b>
+                </div>
             </div>
         </form>
-
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

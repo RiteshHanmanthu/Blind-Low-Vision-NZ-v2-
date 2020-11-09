@@ -33,16 +33,17 @@
                         </li>
                         @if (User.IsInRole("Admin"))
                         {
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink"
-                           data-toggle="dropdown" aria-haspopup="false">
-                            Manage
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" asp-area="" asp-controller="Administration" asp-action="ListRoles">Roles</a>
-                            <a class="dropdown-item" asp-area="" asp-controller="Administration" asp-action="ListUsers">Users</a>
-                        </div>
-                    </li>}
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink"
+                   data-toggle="dropdown" aria-haspopup="false">
+                    Manage
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" asp-area="" asp-controller="Administration" asp-action="ListRoles">Roles</a>
+                    <a class="dropdown-item" asp-area="" asp-controller="Administration" asp-action="ListUsers">Users</a>
+                </div>
+            </li>
+}
                     </ul>
                 </div>
                 <partial name="_LoginPartial.cshtml" />
@@ -60,136 +61,134 @@
     {
 @RenderSection("Scripts", required: true)}
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - Blind & Low Vision New Zealand - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+   
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
 
-    <div class="flex-lg-wrap" id=wrapper-footer-links   ><div class=container>
-        <div class=row>
-            <div class=col-12>
-                <footer id=footer-links class=site-footer style="background-color:black" >
-                    <div class=row>
-                        <div id=site-footer-links>
-                            <div class=menu-blind-foundation-footer-container>
-                                <ul id=menu-blind-foundation-footer class=menu>
-                                    <li id=menu-item-19688 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19688">
-                                        <a href=https://blindlowvision.org.nz/contact/contact-the-blind-low-vision-nz class="text-light">Contact us</a>
-                                    </li>
-                                    <li id=menu-item-19691 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19691">
-                                        <a href=https://blindlowvision.org.nz/contact/locations class="text-light" >Our locations</a>
-                                    </li>
-                                    <li id=menu-item-18070 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18070">
-                                        <a href=https://blindlowvision.org.nz/about-us class="text-light">About</a>
-                                    </li>
-                                    <li id=menu-item-18059 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18059">
-                                        <a href=https://blindlowvision.org.nz/how-we-can-help class="text-light">How we can help</a>
-                                    </li>
-                                    <li id=menu-item-18060 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18060">
-                                        <a href=https://blindlowvision.org.nz/how-we-can-help/library class="text-light">Library</a>
-                                    </li>
-                                    <li id=menu-item-18057 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18057">
-                                        <a href=https://blindlowvision.org.nz/shop class="text-light">Shop</a>
-                                    </li>
-                                    <li id=menu-item-18068 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18068">
-                                        <a href=https://blindlowvision.org.nz/news-events/events class="text-light">Events</a>
-                                    </li>
-                                    <li id=menu-item-18069 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-18069">
-                                        <a href=https://blindlowvision.org.nz/news-events/news >News &#038; Views</a><ul class=sub-menu>
-                                            <li id=menu-item-25139 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25139">
-                                                <a href=https://careers-blindfoundation.force.com/s class="text-light" >Careers</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li id=menu-item-19696 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19696">
-                                        <a href=http://blindlowvision.org.nz/guide-dogs class="text-light">Guide Dogs</a>
-                                    </li>
-                                    <li id=menu-item-18067 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18067">
-                                        <a href=https://blindlowvision.org.nz/get-involved class="text-light">Get involved</a>
-                                    </li>
-                                    <li id=menu-item-18058 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18058">
-                                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Donation">Donate</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div><div id=site-footer-social-links class=social-icons>
-                            <div id=custom_html-2 class="widget_text footer-social-widget widget_custom_html widget-count-1 col-md-12">
-                                <div class="textwidget custom-html-widget">
-                                    <div id=footer-social-heading>
-                                        Follow us
-                                    </div><div class=social-icons>
-                                        <div id=footer-social-links>
-                                            <a href=https://www.facebook.com/BlindLowVisionNZ/ class="text-light"  target=_blank aria-label=Instagram>
-                                                <i class="fab fa-facebook fa-3x"></i>
-                                            </a>
-                                            <a href=https://www.instagram.com/BlindLowVisionNZ/ class="text-light" target=_blank aria-label=Instagram>
-                                                <i class="fab fa-instagram fa-3x"></i>
-                                            </a>
-                                            <a href=https://twitter.com/BlindLowVision class="text-light" target=_blank aria-label=Twitter>
-                                                <i class="fab fa-twitter fa-2x"></i>
-                                            </a>
-                                            <a href=https://www.youtube.com/c/BlindLowVisionNZ class="text-light" target=_blank aria-label=YouTube>
-                                                <i class="fab fa-youtube fa-3x"></i>
-                                            </a>
-                                            <a href=https://www.linkedin.com/company/blind-low-vision-nz class="text-light" target=_blank aria-label="Linked In">
-                                                <i class="fab fa-linkedin-square fa-3x"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><div id=footer-logo>
-                            <a class=navbar-brand rel=home href=https://blindlowvision.org.nz title=blindlowvision.org.nz>
-                                <img src=https://bf-website-uploads-production.s3.amazonaws.com/uploads/2020/01/Blind_Low_Vision_NZ_Formerly_Stacked_Rev_RGB-1.png class=img-fluid alt="Blind Low Vision NZ logo" itemprop=logo srcset="https://bf-website-uploads-production.s3.amazonaws.com/uploads/2020/01/Blind_Low_Vision_NZ_Formerly_Stacked_Rev_RGB-1-300x101.png 300w, https://bf-website-uploads-production.s3.amazonaws.com/uploads/2020/01/Blind_Low_Vision_NZ_Formerly_Stacked_Rev_RGB-1-768x259.png 768w, https://bf-website-uploads-production.s3.amazonaws.com/uploads/2020/01/Blind_Low_Vision_NZ_Formerly_Stacked_Rev_RGB-1-1024x345.png 1024w, https://bf-website-uploads-production.s3.amazonaws.com/uploads/2020/01/Blind_Low_Vision_NZ_Formerly_Stacked_Rev_RGB-1-600x202.png 600w" sizes="(max-width: 300px) 100vw, 300px">
-                            </a>
-                        </div><div id=footer-menu-contact>
-                            <div id=footer-secondary-menu class="secondary-menu ">
-                                <ul class=navbar-nav role=menubar aria-label="secondary menu">
-                                    <li class="menu-item menu-item-type-post_type menu-item-object-page nav-item menu-item-18055" role=none>
-                                        <a title="Donate Now" href=https://blindlowvision.org.nz/get-involved/donate/donate-now/ class=nav-link role=menuitem>Donate Now</a>
-                                    </li>
-                                </ul>
-                            </div><div id=footer-phone-contact>
-                                <div class=phone-contact>
-                                    <a href="tel:0800 24 33 33">
-                                        <div class=site-phone-number>0800 24 33 33</div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div><div id=final-footer-copyright-links>
-                            <div id=copyright>Copyright Blind Low Vision NZ 2020 &copy</div><div id=site-final-footer-links>
-                                <div class=menu-blind-foundation-footer-end-container>
-                                    <ul id=menu-blind-foundation-footer-end class=menu>
-                                        <li id=menu-item-18071 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18071">
-                                            <a href=https://blindlowvision.org.nz/about-us/terms-conditions >Terms &#038; Conditions</a>
+
+
+
+
+
+
+
+<footer id=footer-links class=site-footer style="background-color:black">
+    <div class="flex-lg-wrap" id=wrapper-footer-links>
+        <div class=container>
+            <div class=row>
+                <div class=col-12>
+                       <div class=row>
+                            <div id=site-footer-links>
+                                <div class=menu-blind-foundation-footer-container>
+                                    <ul id=menu-blind-foundation-footer class=menu>
+                                        <li id=menu-item-19688 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19688">
+                                            <a href=https://blindlowvision.org.nz/contact/contact-the-blind-low-vision-nz class="text-light">Contact us</a>
                                         </li>
-                                        <li id=menu-item-21165 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21165">
-                                            <a href=https://blindlowvision.org.nz/about-us/privacy >Privacy statement</a>
+                                        <li id=menu-item-19691 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19691">
+                                            <a href=https://blindlowvision.org.nz/contact/locations class="text-light">Our locations</a>
                                         </li>
-                                        <li id=menu-item-19699 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19699">
-                                            <a href=https://blindlowvision.org.nz/sitemap >Sitemap</a>
+                                        <li id=menu-item-18070 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18070">
+                                            <a href=https://blindlowvision.org.nz/about-us class="text-light">About</a>
+                                        </li>
+                                        <li id=menu-item-18059 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18059">
+                                            <a href=https://blindlowvision.org.nz/how-we-can-help class="text-light">How we can help</a>
+                                        </li>
+                                        <li id=menu-item-18060 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18060">
+                                            <a href=https://blindlowvision.org.nz/how-we-can-help/library class="text-light">Library</a>
+                                        </li>
+                                        <li id=menu-item-18057 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18057">
+                                            <a href=https://blindlowvision.org.nz/shop class="text-light">Shop</a>
+                                        </li>
+                                        <li id=menu-item-18068 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18068">
+                                            <a href=https://blindlowvision.org.nz/news-events/events class="text-light">Events</a>
+                                        </li>
+                                        <li id=menu-item-18069 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-18069">
+                                            <a href=https://blindlowvision.org.nz/news-events/news>News &#038; Views</a><ul class=sub-menu>
+                                                <li id=menu-item-25139 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25139">
+                                                    <a href=https://careers-blindfoundation.force.com/s class="text-light">Careers</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id=menu-item-19696 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19696">
+                                            <a href=http://blindlowvision.org.nz/guide-dogs class="text-light">Guide Dogs</a>
+                                        </li>
+                                        <li id=menu-item-18067 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18067">
+                                            <a href=https://blindlowvision.org.nz/get-involved class="text-light">Get involved</a>
+                                        </li>
+                                        <li id=menu-item-18058 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18058">
+                                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Donation">Donate</a>
                                         </li>
                                     </ul>
                                 </div>
+                            </div><div id=site-footer-social-links class=social-icons>
+                                <div id=custom_html-2 class="widget_text footer-social-widget widget_custom_html widget-count-1 col-md-12">
+                                    <div class="textwidget custom-html-widget">
+                                        <div id=footer-social-heading>
+                                            Follow us
+                                        </div><div class=social-icons>
+                                            <div id=footer-social-links>
+                                                <a href=https://www.facebook.com/BlindLowVisionNZ/ class="text-light" target=_blank aria-label=Instagram>
+                                                    <i class="fab fa-facebook fa-3x"></i>
+                                                </a>
+                                                <a href=https://www.instagram.com/BlindLowVisionNZ/ class="text-light" target=_blank aria-label=Instagram>
+                                                    <i class="fab fa-instagram fa-3x"></i>
+                                                </a>
+                                                <a href=https://twitter.com/BlindLowVision class="text-light" target=_blank aria-label=Twitter>
+                                                    <i class="fab fa-twitter fa-2x"></i>
+                                                </a>
+                                                <a href=https://www.youtube.com/c/BlindLowVisionNZ class="text-light" target=_blank aria-label=YouTube>
+                                                    <i class="fab fa-youtube fa-3x"></i>
+                                                </a>
+                                                <a href=https://www.linkedin.com/company/blind-low-vision-nz class="text-light" target=_blank aria-label="Linked In">
+                                                    <i class="fab fa-linkedin-square fa-3x"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id=footer-menu-contact>
+                                    <div id=footer-phone-contact>
+                                        <div class=phone-contact>
+                                            <a href="tel:0800 24 33 33">
+                                                <div class=site-phone-number>0800 24 33 33</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div><div id=final-footer-copyright-links>
+                                    <div id=copyright>Copyright Blind Low Vision NZ 2020 &copy</div><div id=site-final-footer-links>
+                                        <div class=menu-blind-foundation-footer-end-container>
+                                            <ul id=menu-blind-foundation-footer-end class=menu>
+                                                <li id=menu-item-18071 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18071">
+                                                    <a href=https://blindlowvision.org.nz/about-us/terms-conditions>Terms &#038; Conditions</a>
+                                                </li>
+                                                <li id=menu-item-21165 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21165">
+                                                    <a href=https://blindlowvision.org.nz/about-us/privacy>Privacy statement</a>
+                                                </li>
+                                                <li id=menu-item-19699 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19699">
+                                                    <a href=https://blindlowvision.org.nz/sitemap>Sitemap</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class=row>
+                                <div id=final-footer-copyright-links>
+                                    <div id=copyright>
+                                        Blind Low Vision NZ is registered in New Zealand. Our Charities Commission Registration number is <a href="https://register.charities.govt.nz/CharitiesRegister/ViewCharity?accountId=64c19b74-268a-dc11-98a0-0015c5f3da29&searchId=a3f4575b-e365-4f14-83c9-28db237fd7ac"> CC21361 </a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div><div class=row>
-                        <div id=final-footer-copyright-links>
-                            <div id=copyright>
-                                Blind Low Vision NZ is registered in New Zealand. Our Charities Commission Registration number is <a href="https://register.charities.govt.nz/CharitiesRegister/ViewCharity?accountId=64c19b74-268a-dc11-98a0-0015c5f3da29&searchId=a3f4575b-e365-4f14-83c9-28db237fd7ac"> CC21361 </a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
+                       </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+ </footer>
+
+                    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+                    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+                    <script src="~/js/site.js" asp-append-version="true"></script>
+
+
 
 </body>
 </html>

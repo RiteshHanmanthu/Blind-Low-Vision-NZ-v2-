@@ -50,7 +50,7 @@ namespace LowVision.Controllers
 
             using (SqlConnection sqlconn = new SqlConnection(connection))
             {
-                string sqlquery = "insert into NewDonor(DonorName, Email, Country, DonationAmt, CCname, CCnumber, CCexpiration, CCcsc) values ('" + ur.DonorName + "','" + ur.Email + "','" + ur.Country + "','" + ur.DonationAmt + "','" + ur.CCname + "','" + ur.CCnumber + "','" + ur.CCexpiration + "','" + ur.CCcsc + "')";
+                string sqlquery = "insert into NewDonor(DonorName, Email, Country, DonationAmt, CCname, CCnumber, CCmonth, CCyear, CCcsc) values ('" + ur.DonorName + "','" + ur.Email + "','" + ur.Country + "','" + ur.DonationAmt + "','" + ur.CCname + "','" + ur.CCnumber + "','" + ur.CCmonth + "','" + ur.CCyear + "','" + ur.CCcsc + "')";
                 using (SqlCommand sqlcomm = new SqlCommand(sqlquery, sqlconn))
                 {
                     sqlconn.Open();
@@ -64,6 +64,7 @@ namespace LowVision.Controllers
             }
             return View();
             
-        } 
+        }
+        
     }
 }
