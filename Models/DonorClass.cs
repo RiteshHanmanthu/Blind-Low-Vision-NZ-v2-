@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using System.Numerics;
 namespace LowVision.Models
 {
     public class DonorClass
     {
         [Required]
         public int DonorId { get; set; }
+
         [MaxLength(70, ErrorMessage ="Full Name cannot exceed 70 characters")]
         [Display(Name = "Full name")]
         [Required(ErrorMessage ="Please enter Full name")]
@@ -27,7 +29,7 @@ namespace LowVision.Models
         [Range(5,500)]
         [Display(Name = "Donation Amount ($NZD)")]
         [Required(ErrorMessage = "Please enter Donation Amount more than $5 NZD as a whole number")]
-        public int DonationAmt { get; set; }
+        public int DonationAmount { get; set; }
 
         
         [Display(Name = "Cardholder name")]
@@ -37,14 +39,15 @@ namespace LowVision.Models
         
         [Display(Name = "Card number")]
         [Required(ErrorMessage = "Please enter card-holder number")]
-        public int CCnumber { get; set; }
+        [DataType(DataType.CreditCard)]
+        public string CCnumber { get; set; }
 
-        [Display(Name = "Card Expiry: Month")]
+        [Display(Name = "Card Expiry Month: ")]
         [Required(ErrorMessage = "Please enter card expiration date")]
         [DataType(DataType.Date)]
         public int CCmonth { get; set; }
 
-        [Display(Name = "Year: ")]
+        [Display(Name = "Card Expiry Year: ")]
         [Required(ErrorMessage = "Please enter card expiration date")]
         [DataType(DataType.Date)]
         public int CCyear { get; set; }

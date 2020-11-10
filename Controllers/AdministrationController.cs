@@ -15,7 +15,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace LowVision.Controllers
 {
-    [Authorize(Roles = "Admin")]
+    
     public class AdministrationController : Controller
      {
         private readonly RoleManager<IdentityRole> roleManager;

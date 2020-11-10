@@ -50,21 +50,22 @@ namespace LowVision.Controllers
 
             using (SqlConnection sqlconn = new SqlConnection(connection))
             {
-                string sqlquery = "insert into NewDonor(DonorName, Email, Country, DonationAmt, CCname, CCnumber, CCmonth, CCyear, CCcsc) values ('" + ur.DonorName + "','" + ur.Email + "','" + ur.Country + "','" + ur.DonationAmt + "','" + ur.CCname + "','" + ur.CCnumber + "','" + ur.CCmonth + "','" + ur.CCyear + "','" + ur.CCcsc + "')";
+                string sqlquery = "insert into NewDonor(DonorName, Email, Country, DonationAmount, CCname, CCnumber, CCmonth, CCyear, CCcsc) values ('" + ur.DonorName + "','" + ur.Email + "','" + ur.Country + "','" + ur.DonationAmount + "','" + ur.CCname + "','" + ur.CCnumber + "','" + ur.CCmonth + "','" + ur.CCyear + "','" + ur.CCcsc + "')";
                 using (SqlCommand sqlcomm = new SqlCommand(sqlquery, sqlconn))
                 {
                     sqlconn.Open();
                     sqlcomm.ExecuteNonQuery();
-                    ViewData["Message"] = "Your donation was of " + ur.DonationAmt + " was successful..!";
+                    ViewData["Message"] = "Your donation was of NZD $" + ur.DonationAmount + " was successful..!";
                 }
             }
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                ModelState.Clear();
+                return View();
             }
+            ModelState.Clear();
             return View();
-            
+
         }
-        
+
     }
 }
