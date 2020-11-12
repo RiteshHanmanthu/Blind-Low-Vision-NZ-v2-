@@ -21,7 +21,7 @@ This includes....
 
 # Project Overview
  This project is to develop a engaging website that would provide information about a fundraising challenge to any user, with the option to donate.
- This web-application will be made to be compatible to most devices used to date by using ASP.NET Core Web Application>(ASP.NET Core v3.1) Web-Application MVC using Visual Studio 2019.
+ This web-application will be made to be compatible to most devices used to date by using ASP.NET Core Web Application>(ASP.NET Core v3.1) Web-Application MVC using Visual Studio 2019. This is the web-application side of the project where the landing page, register page, and donation page are developed.
  
 # Licenses
 * GNU v3.0 (General Public License). Any user is able to run, study, share, and modify the software BUT with the condition of mentioning the creator.
@@ -30,10 +30,15 @@ This includes....
 # Future Implementation Ideas
 What I plan to further develop this project in the future.
 * Develop a Donation platform for charitable donations.
-* Develop a video considering high restrctions of the end-user (target audience).
+* Develop a video considering the high restrctions of the end-user (target audience).
 
-# Requirements
-* ASP.NET Framework version 3.1
+# Hardware requirements
 * Min. 4 GB RAM
-# Software running requirements
-CLick LowVision.Exe to run application
+
+# Software requirements|Compatibility
+* ASP.NET FRAMEWORK version 3.1
+* Windows 10 Home
+
+
+# How to run software
+CLick LowVision.sln> Start debug / Ctrl + F5
