@@ -1,4 +1,4 @@
-# Blind-Low-Vision-NZ-v2-
+# Blind-Low-Vision-NZ-v2
 
  ATTENTION - NEW REPOSITORY - Due to unexpected error at file save location.
 
